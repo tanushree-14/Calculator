@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-	background: #ccc;
+	background: #a6a6ff;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
@@ -18,54 +20,46 @@ body {
 	position: relative;
 	border-radius: 7px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 10rem;
 	display: block;
 	height: auto;
 	width: 278px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(0, 9, 55);
 	font-size: 0.8em;
 	padding: 5px;
 	max-width: 320px;
+	box-shadow: rgb(23, 40, 57) 10px 40px 50px -10px;
+	border: 1px solid blue;
 }
-#calculator:before,
-#calculator:after {
-	content: '';
+
+.heading {
+	font-size: x-large;
 	position: absolute;
-	z-index: -1;
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-	top: 10px;
-	bottom: 10px;
-	left: 0;
-	right: 0;
-	-moz-border-radius: 100px / 10px;
-	border-radius: 100px / 10px;
-}
-#calculator:after {
-	right: 10px;
-	left: auto;
-	-webkit-transform: skew(8deg) rotate(3deg);
-	-moz-transform: skew(8deg) rotate(3deg);
-	-ms-transform: skew(8deg) rotate(3deg);
-	-o-transform: skew(8deg) rotate(3deg);
-	transform: skew(8deg) rotate(3deg);
+	text-transform: uppercase;
+	color: white;
+	top: 23%;
+	left: 10%;
+	z-index: 1;
 }
 
 #smallResult {
 	position: absolute;
 	top: 3px;
 	right: 10px;
+	display: none;
 }
 
 #result {
 	width: 100%;
-	padding: 15px 0px;
+	padding: 15px 5px;
 	text-align: right;
 	font-size: 2.5em;
-	font-family: 'Oxygen Mono', monospace;
 	background: inherit;
-	color: black;
+	color: rgb(191, 212, 255);
+	background-color: rgb(13, 0, 75);
+	border-radius: 5px;
+	border: 2px solid rgb(109, 109, 255);
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 button {
@@ -73,22 +67,23 @@ button {
 	height: 60px;
 	margin: 4px 2px;
 	outline: none;
-	border: none;
-	background: rgb(189, 112, 112);
-	color: black;
+	background: rgb(9, 6, 74);
+	color: rgb(255, 255, 255);
 	border-radius: 5px;
 	font-size: 1.4em;
+	box-shadow: rgba(204, 219, 232, 0.447) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.281) -3px -3px 6px 1px inset;
+	border: 1px solid rgb(255, 255, 255);
 }
 
 button:active {
-	background: #bfbfbf;
+	background: #a4ccf5;
 }
 
 button:nth-child(2) {
 	margin-left: 205px;
 	display: block;
-	background: #ef4a49;
-	color: white;
+	background: rgb(3, 1, 44);
+	color: #ef4a49;
 }
 
 button:nth-child(2):active {
@@ -100,8 +95,8 @@ button:nth-child(10),
 button:nth-child(14),
 button:nth-child(17),
 button:nth-child(18) {
-	background: #00b49a;
-	color: white;
+	background: rgb(3, 1, 44);
+	color: #00ffd9;
 }
 
 button:nth-child(6):active,
